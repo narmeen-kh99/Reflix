@@ -2,18 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-start; /* align navbar to the left */
-  color: #fff;
+  color: #eef0f1;
   padding: 0 16px;
 }
 
 .navbar a {
   margin-top: 10px;
   margin-left: 10px;
-  color: #fff;
+  color: #15aab5;
   text-decoration: wavy;
   margin-right: 16px;
   font-size: 40px;
-  color: white;
+  color: rgb(22, 170, 200);
   font-weight: bold;
   font-family: cursive;
 }
