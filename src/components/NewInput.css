@@ -1,0 +1,53 @@
+.newInput {
+  padding: 10px;
+  font-size: 2vw;
+  padding: 16px 32px;
+  height: 50px;
+  width: 2300px;
+  background-color: #fdfbf9;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+  background-image: linear-gradient(
+    135deg,
+    #a2e752 0%,
+    #cfdd36 20%,
+    #d6580f 51%,
+    #f51f1f 80%
+  );
+  background-size: 200% auto;
+}
+.Button {
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #f7f6f5;
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 16px 0 13px;
+  color: inherit;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 200px;
+  height: 80px;
+  text-decoration: wavy;
+  font-weight: bold;
+  font-family: cursive;
+  background-image: linear-gradient(
+    135deg,
+    #a2e752 0%,
+    #cfdd36 20%,
+    #d6580f 51%,
+    #f51f1f 80%
+  );
+  background-size: 200% auto;
+}
+.Button:hover {
+  transform: scale(110%) rotate(-2deg);
+}

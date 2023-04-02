@@ -1,0 +1,14 @@
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* align navbar to the left */
+  color: #edf1f1;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-decoration: wavy;
+  margin-right: 16px;
+  font-size: 200x;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 40px;
+}
