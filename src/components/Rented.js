@@ -16,6 +16,7 @@ const Rented = ({
         {getCatalogData.map((movie) =>
           movie.isRented == true ? (
             <Movie
+              isRented={movie.isRented}
               key={movie.id}
               title={movie.title}
               img={movie.img}

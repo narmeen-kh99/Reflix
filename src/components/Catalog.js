@@ -60,6 +60,7 @@ function Catalog({
       <div className="Catalg-list">
         {getCatalogData.map((movie) => (
           <Movie
+            isRented={movie.isRented}
             keyId={movie.id}
             title={movie.title}
             img={movie.img}

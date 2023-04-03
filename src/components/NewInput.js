@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../components/NewInput.css";
 import Catalog from "./Catalog";
+import { CATALOG } from "../Constants";
 
 const NewInput = ({
   getCatalogData,
@@ -13,16 +14,17 @@ const NewInput = ({
   const [staticData, setStaticData] = useState(getCatalogData);
 
   const updateText = (event) => {
-    setText(event.target);
+    setText(event.target.value);
+    console.log(text);
   };
-  const searchMovie = (text) => {
-    let newInp = text.value;
-    let newDataa = text.value.toLowerCase();
+  const searchMovie = () => {
+    console.log(text);
+    let newInp = text;
     let newData = [];
-    getCatalogData.forEach((element) => {
+    CATALOG.forEach((element) => {
       if (newInp == "") {
-        newData = [...getCatalogData];
-      } else if (element.title.toUpperCase().includes(newInp.toUpperCase())) {
+        newData = [...CATALOG];
+      } else if (element.title.includes(newInp)) {
         newData.push(element);
       }
     });
@@ -31,16 +33,20 @@ const NewInput = ({
   };
   return (
     <div>
-      <input className="newInput" type="text" onChange={updateText} />
+      <input
+        className="newInput"
+        type="text"
+        onChange={updateText}
+        value={text}
+      />
       <button
         className="Button"
         onClick={() => {
-          searchMovie(text);
+          searchMovie();
         }}
       >
         search
       </button>
-      <di>{}</di>;
     </div>
   );
 };

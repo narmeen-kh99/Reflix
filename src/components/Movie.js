@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Movie({
+  isRented,
   keyId,
   title,
   img,
@@ -15,7 +16,7 @@ function Movie({
   changeCatalogData,
   removeMovieFRomRent,
 }) {
-  let [val, setVal] = useState("+");
+  let [val, setVal] = useState(isRented ? "-" : "+");
 
   const changeval = (keyId) => {
     let newVal = val;
